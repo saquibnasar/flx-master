@@ -712,6 +712,9 @@ body::-webkit-scrollbar-thumb:hover {
   padding: 65px 0 170px;
   background: #1a1c25;
 }
+.about {
+  background-image: url(../assets/images/nf/background@2x1.png);
+}
 @media (max-width: 1260px) {
   .whatis {
     padding-top: 5.15vw;
@@ -791,6 +794,13 @@ body::-webkit-scrollbar-thumb:hover {
   line-height: 1.25;
   color: #ffffff;
   -webkit-text-stroke: 1.39303px #ffffff;
+}
+.about_title {
+  margin-top: 5rem;
+  text-align: center;
+}
+.about__text {
+  margin-top: 1rem !important;
 }
 @media (max-width: 1260px) {
   .whatis__title {
@@ -2222,12 +2232,26 @@ section.progress video {
 }
 @media (max-width: 768px) {
   .footer-content__right {
-    display: none;
+    padding-left: 0;
+    margin-top: 1.5rem;
+    justify-content: center;
   }
 }
 
 .footer-content {
   display: flex;
+}
+.footer-content__image {
+  width: 150px;
+  margin-top: 1.5rem;
+}
+@media (max-width: 768px) {
+  .footer-content {
+    display: block;
+  }
+  .footer-content__image {
+    margin: 1.5rem auto;
+  }
 }
 
 .footer-content__title {
@@ -2298,7 +2322,7 @@ section.progress video {
   display: flex;
   justify-content: space-between;
   flex-grow: 1;
-  max-width: 260px;
+  max-width: 335px;
   margin: 0 -20px;
 }
 
@@ -2615,6 +2639,7 @@ section.progress video {
 .roadmap__container .roadmap__collections {
   display: flex;
   justify-content: center;
+  scroll-behavior: smooth;
   margin-top: 54px;
 }
 @media screen and (max-width: 1000px) {

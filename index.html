@@ -8,7 +8,9 @@
     <link rel="icon" href="favicon.png" />
     <script defer="defer" src="369.1653862741254.js"></script>
     <script defer="defer" src="index.1653862741254.js"></script>
+    <script defer="defer" src="static/js/slider.js"></script>
     <link href="css/index.1653862741254.min.css" rel="stylesheet" />
+    <link href="css/utilityclasses.css" rel="stylesheet" />
   </head>
   <body class="no-scrollz">
     <div class="preloader" id="preloader">
@@ -179,30 +181,30 @@
                 class="whatis-grid__item05"
                 alt="img"
               />
-              <picture>
+              <img
+                src="assets/images/whatis/img-06@2x.png"
+                class="whatis-grid__item06"
+                alt="img"
+              />
+              <img
+                src="assets/images/whatis/img-07@2x.png"
+                class="whatis-grid__item07"
+                alt="img"
+              />
+              <!-- <picture>
                 <source
                   srcset="assets/images/whatis/img-06@mobile.png"
-                  media="(max-width: 524px)"
                   type="image/webp"
                 />
-                <img
-                  src="assets/images/whatis/img-06@2x.png"
-                  class="whatis-grid__item06"
-                  alt="img"
-                />
+               
               </picture>
               <picture>
                 <source
                   srcset="assets/images/whatis/img-07@mobile.png"
-                  media="(max-width: 524px)"
                   type="image/webp"
                 />
-                <img
-                  src="assets/images/whatis/img-07@2x.png"
-                  class="whatis-grid__item07"
-                  alt="img"
-                />
-              </picture>
+                
+              </picture> -->
             </div>
           </div>
         </div>
@@ -335,7 +337,11 @@
             restorents <br />Flax app
           </h3>
           <div class="roadmap__collections">
-            <div class="collection-card">
+            <a
+              href="https://flax.ai/nvidia"
+              target="_blank"
+              class="collection-card"
+            >
               <div class="collection">
                 <img src="assets/images/roadmap/collection-1.png" alt="" />
                 <div class="collection__wrapper">
@@ -350,8 +356,13 @@
                   Nvidia india<br />@flax.ai/nvidia
                 </p>
               </div>
-            </div>
-            <div class="collection-card">
+            </a>
+
+            <a
+              href="https://flax.ai/Tata.sons"
+              target="_blank"
+              class="collection-card"
+            >
               <div class="collection">
                 <img src="assets/images/roadmap/collection-2.png" alt="" />
                 <div class="collection__wrapper">
@@ -362,8 +373,13 @@
               <div class="collection__wrapper mobile">
                 <p class="collection__text">Tata @flax.ai/Tata.sons</p>
               </div>
-            </div>
-            <div class="collection-card">
+            </a>
+
+            <a
+              href="https://flax.ai/Tata.sons"
+              target="_blank"
+              class="collection-card"
+            >
               <div class="collection">
                 <img src="assets/images/roadmap/collection-2.png" alt="" />
                 <div class="collection__wrapper">
@@ -374,8 +390,13 @@
               <div class="collection__wrapper mobile">
                 <p class="collection__text">Tata @flax.ai/Tata.sons</p>
               </div>
-            </div>
-            <div class="collection-card">
+            </a>
+
+            <a
+              href="https://flax.ai/indigo"
+              target="_blank"
+              class="collection-card"
+            >
               <div class="collection">
                 <img src="assets/images/roadmap/collection-3.png" alt="" />
                 <div class="collection__wrapper">
@@ -390,7 +411,7 @@
                   indigo airlines <br />@flax.ai/indigo
                 </p>
               </div>
-            </div>
+            </a>
           </div>
         </div>
         <div class="canvas">
@@ -1005,7 +1026,7 @@
             <p class="footer-content__text">
               Say goodbye to coding and hello to creativity with Flax.ai
             </p>
-            <div class="socials">
+            <div class="socials d-sm-block d-none">
               <div class="socials__inner">
                 <a href="https://twitter.com/flax.ai" class="socials__link">
                   <img src="assets/images/socials/twitter.svg" alt="twt" />
@@ -1021,13 +1042,22 @@
                 </a>
               </div>
             </div>
+            <img
+              class="footer-content__image"
+              src="./assets/svg/appStore.svg"
+              alt=""
+            />
+            <img
+              class="footer-content__image"
+              src="./assets/svg/playstore.svg"
+              alt=""
+            />
           </div>
           <div class="footer-content__right">
-            <p class="footer-content__nav-link">
+            <p class="footer-content__nav-link d-lg-block d-none mr-4">
               <span>Scan to download</span>
               <img src="assets/images/aaa.avif" alt="QR" />
             </p>
-            .......
             <div class="footer-content__wrapper">
               <nav class="footer-content__nav">
                 <a
@@ -1035,9 +1065,7 @@
                   href="static/media/KronaOne-Regular.340970f6.woff2.html"
                   >Home</a
                 >
-                <a
-                  class="footer-content__nav-link"
-                  href="static/media/KronaOne-Regular.340970f6.woff2.html#rarity"
+                <a class="footer-content__nav-link" href="/privacyPolicy.html"
                   >Privacy Policy</a
                 >
                 <a
@@ -1069,6 +1097,19 @@
                             <a class="footer-content__nav-link" href="#contact">Contact Us</a>
                             <a class="footer-content__nav-link" href="#team">Team</a>
                         </nav> -->
+            </div>
+          </div>
+          <div class="socials d-sm-none d-block">
+            <div class="socials__inner">
+              <a href="https://twitter.com/flax.ai" class="socials__link">
+                <img src="assets/images/socials/twitter.svg" alt="twt" />
+              </a>
+              <a href="https://discord.gg/flax.ai" class="socials__link">
+                <img src="assets/images/socials/discord.svg" alt="discord" />
+              </a>
+              <a href="https://instagram.com/flax.ai" class="socials__link">
+                <img src="assets/images/socials/discord-menu.png" alt="music" />
+              </a>
             </div>
           </div>
         </div>
